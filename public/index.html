@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verso — Estúdio de Estética</title>
+<meta name="description" content="Skincare clínico e resultado visível: limpeza de pele, protocolos faciais, drenagem e design de sobrancelhas em Pinheiros, São Paulo.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231B1917'/%3E%3Cpath d='M27 30 L50 74 L73 30' fill='none' stroke='%238A72FF' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Verso — Estúdio de Estética">
+<meta property="og:description" content="Skincare clínico e resultado visível em Pinheiros, São Paulo.">
+<meta property="og:url" content="https://verso-estetica-landing.vercel.app/">
+<script>
+  (function () {
+    var stored = localStorage.getItem("verso-theme");
+    var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav__mark" href="#top">Verso<span>.</span></a>
+  <nav class="nav__links">
+    <a href="#tratamentos">Tratamentos</a>
+    <a href="#camadas">Camadas</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#diferenciais">Diferenciais</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro" aria-pressed="false">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+  <a class="nav__cta" href="#agendar">Agendar avaliação</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text" data-reveal>
+      <p class="eyebrow">Estúdio de estética facial e corporal · Pinheiros, SP</p>
+      <h1 class="hero__title">
+        A pele tem <em>camadas</em>.<br>
+        O cuidado também<br>
+        precisa ter.
+      </h1>
+      <p class="hero__lede">
+        Nada de procedimento avulso escolhido no escuro. Cada rosto entra
+        num protocolo de quatro camadas — limpeza, tonificação, tratamento
+        ativo e finalização — construído sessão a sessão pra sua pele, não
+        pra uma ficha genérica.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="#agendar">Agendar avaliação</a>
+        <a class="btn btn--ghost btn--lg" href="#tratamentos">Ver tratamentos</a>
+      </div>
+      <div class="hero__trust">
+        <span><strong>7 anos</strong> de estúdio em Pinheiros</span>
+        <span><strong>+900</strong> protocolos montados</span>
+      </div>
+    </div>
+
+    <div class="hero__signature">
+      <div class="iris" data-iris>
+        <svg class="iris__svg" viewBox="0 0 320 320" aria-hidden="true">
+          <circle class="iris__ring" data-ring="0" cx="160" cy="160" r="140" />
+          <circle class="iris__ring" data-ring="1" cx="160" cy="160" r="106" />
+          <circle class="iris__ring" data-ring="2" cx="160" cy="160" r="72" />
+          <circle class="iris__ring" data-ring="3" cx="160" cy="160" r="38" />
+          <circle class="iris__core" cx="160" cy="160" r="14" />
+        </svg>
+        <button class="iris__hit" data-layer="0" style="--a:-90deg; --r:140px" aria-label="Camada 1, limpeza"></button>
+        <button class="iris__hit" data-layer="1" style="--a:-20deg; --r:106px" aria-label="Camada 2, tonificação"></button>
+        <button class="iris__hit" data-layer="2" style="--a:55deg; --r:72px" aria-label="Camada 3, tratamento"></button>
+        <button class="iris__hit" data-layer="3" style="--a:200deg; --r:38px" aria-label="Camada 4, finalização"></button>
+      </div>
+      <div class="iris__readout" data-readout>
+        <span class="iris__readout-tag" data-readout-tag>Camada 01</span>
+        <h3 data-readout-title>Limpeza</h3>
+        <p data-readout-desc>Remove oleosidade e resíduo de poluição sem agredir o manto hidrolipídico — a base pra qualquer ativo funcionar depois.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRATAMENTOS -->
+  <section class="section" id="tratamentos">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">A ficha de estúdio</p>
+      <h2>Tratamentos</h2>
+    </div>
+
+    <ul class="menu" data-reveal-group>
+      <li class="menu__row" data-reveal style="--i:0">
+        <span class="menu__dur">50 min</span>
+        <div class="menu__name">
+          <h3>Limpeza de pele profunda</h3>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <span class="menu__price">R$ 180</span>
+        </div>
+        <p>Extração manual, alta frequência e máscara calmante sob medida pro seu tipo de pele.</p>
+      </li>
+      <li class="menu__row" data-reveal style="--i:1">
+        <span class="menu__dur">40 min</span>
+        <div class="menu__name">
+          <h3>Peeling de diamante</h3>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <span class="menu__price">R$ 220</span>
+        </div>
+        <p>Microesfoliação mecânica pra textura, poro dilatado e marcas superficiais de acne.</p>
+      </li>
+      <li class="menu__row" data-reveal style="--i:2">
+        <span class="menu__dur">45 min</span>
+        <div class="menu__name">
+          <h3>Radiofrequência facial</h3>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <span class="menu__price">R$ 260</span>
+        </div>
+        <p>Estímulo de colágeno pra firmeza — protocolo de 6 sessões com fotos de progresso.</p>
+      </li>
+      <li class="menu__row" data-reveal style="--i:3">
+        <span class="menu__dur">60 min</span>
+        <div class="menu__name">
+          <h3>Drenagem linfática corporal</h3>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <span class="menu__price">R$ 190</span>
+        </div>
+        <p>Manual, ritmada, com foco em retenção e pós-operatório liberado pelo cirurgião.</p>
+      </li>
+      <li class="menu__row" data-reveal style="--i:4">
+        <span class="menu__dur">30 min</span>
+        <div class="menu__name">
+          <h3>Design de sobrancelhas com henna</h3>
+          <span class="menu__leader" aria-hidden="true"></span>
+          <span class="menu__price">R$ 90</span>
+        </div>
+        <p>Mapeamento pela estrutura óssea do rosto antes de qualquer pinça encostar.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CAMADAS (assinatura) -->
+  <section class="section section--dark" id="camadas">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow eyebrow--light">O protocolo por trás de cada sessão</p>
+      <h2>Quatro camadas, <em>uma ordem</em> que não muda</h2>
+      <p class="section__lede">Cada camada prepara a próxima. Pular uma etapa pra "economizar tempo" é o motivo mais comum de tratamento que não sustenta resultado.</p>
+    </div>
+
+    <div class="flow" data-reveal-group>
+      <div class="flow__track" aria-hidden="true"></div>
+      <div class="flow__step" data-reveal style="--i:0">
+        <span class="flow__dot"></span>
+        <span class="flow__tag">Limpeza</span>
+        <p>Higienização e extração — remove o que bloqueia absorção.</p>
+      </div>
+      <div class="flow__step" data-reveal style="--i:1">
+        <span class="flow__dot"></span>
+        <span class="flow__tag">Tonificação</span>
+        <p>Reequilibra pH e fecha poros antes do ativo entrar.</p>
+      </div>
+      <div class="flow__step" data-reveal style="--i:2">
+        <span class="flow__dot"></span>
+        <span class="flow__tag">Tratamento</span>
+        <p>Ativo específico pra queixa: manchas, firmeza, acne ou textura.</p>
+      </div>
+      <div class="flow__step" data-reveal style="--i:3">
+        <span class="flow__dot"></span>
+        <span class="flow__tag">Finalização</span>
+        <p>Barreira de proteção e FPS — sela o resultado até a próxima sessão.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="section" id="resultados">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">6 semanas, mesma rotina</p>
+      <h2>Resultado, não promessa</h2>
+    </div>
+
+    <div class="proof">
+      <div class="compare" data-compare data-reveal>
+        <div class="compare__frame">
+          <div class="compare__side compare__side--before">
+            <span class="compare__label">Semana 1</span>
+          </div>
+          <div class="compare__side compare__side--after" data-compare-after>
+            <span class="compare__label">Semana 6</span>
+          </div>
+          <div class="compare__handle" data-compare-handle tabindex="0" role="slider" aria-label="Comparar semana 1 e semana 6" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <span class="compare__grip"></span>
+          </div>
+        </div>
+        <p class="compare__hint">Arraste pra comparar — textura registrada no mesmo protocolo de luz, sem filtro.</p>
+      </div>
+
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>Fiz 6 sessões de radiofrequência achando que ia ser só mais uma promessa. Na quarta sessão a esteticista mudou o ativo porque minha pele parou de responder — isso que me convenceu que tinha protocolo de verdade, não script fixo.</p>
+          <cite>Camila O. — cliente desde março</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Levei fotos de 3 profissionais diferentes pra comparar orçamento de drenagem pós-lipo. Foi a única que pediu a liberação do cirurgião antes de marcar a primeira sessão.</p>
+          <cite>Renata F. — pós-operatório, 12 sessões</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section section--dark" id="diferenciais">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow eyebrow--light">Por que voltar pro mesmo estúdio</p>
+      <h2>Diferenciais</h2>
+    </div>
+
+    <div class="bento" data-reveal-group>
+      <div class="bento__item bento__item--wide" data-reveal style="--i:0">
+        <span class="bento__icon"><svg viewBox="0 0 24 24"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg></span>
+        <h3>Ficha de pele viva, não formulário de papel</h3>
+        <p>Toda sessão atualiza um histórico digital: ativo usado, reação da pele, foto de controle. Você pode pedir seu histórico completo quando quiser.</p>
+      </div>
+      <div class="bento__item" data-reveal style="--i:1">
+        <span class="bento__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v3M16 4v3"/></svg></span>
+        <h3>Agenda sem overbooking</h3>
+        <p>Uma esteticista, um horário. Sem duas clientes dividindo o mesmo intervalo de 40 minutos.</p>
+      </div>
+      <div class="bento__item" data-reveal style="--i:2">
+        <span class="bento__icon"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 6.2L21 10l-5 4.5L17.4 21 12 17.5 6.6 21 8 14.5 3 10l6.4-.8z"/></svg></span>
+        <h3>Ativos rastreados</h3>
+        <p>Nota fiscal e ficha técnica de cada insumo importado disponíveis pra consulta.</p>
+      </div>
+      <div class="bento__item bento__item--wide" data-reveal style="--i:3">
+        <span class="bento__icon"><svg viewBox="0 0 24 24"><path d="M12 21c-4.5-2.7-8-6.4-8-10.5A5.5 5.5 0 0112 6a5.5 5.5 0 018 4.5c0 4.1-3.5 7.8-8 10.5z"/></svg></span>
+        <h3>Reavaliação a cada 4 sessões</h3>
+        <p>Se o protocolo não estiver dando o resultado esperado, ele muda — não é fidelizado por contrato, é revisado com você olhando a foto ao lado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="agendar">
+    <div class="cta__inner">
+      <p class="eyebrow">Agenda de setembro com 6 horários livres</p>
+      <h2>Vamos montar<br><em>o seu protocolo?</em></h2>
+      <p class="cta__lede">Primeira avaliação inclui análise de pele e plano de camadas por escrito, sem custo.</p>
+      <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Verso%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20pele." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <div class="cta__meta">
+        <span>Ter–Sáb · 9h–19h</span>
+        <span>Rua Fradique Coutinho, 812 — Pinheiros, SP</span>
+        <span>@verso.estudio</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>Verso © 2026</span>
+  <span>Estética com protocolo por escrito</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
