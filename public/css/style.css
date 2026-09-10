@@ -484,12 +484,12 @@ p { line-height: 1.65; color: var(--ink-soft); margin: 0; }
   pointer-events: none;
 }
 .compare__side--before img {
-  filter: grayscale(0.35) saturate(0.7) contrast(0.92) brightness(0.92);
+  filter: saturate(0.85) contrast(0.96);
 }
 .compare__side--after {
   clip-path: inset(0 50% 0 0);
 }
-.compare__side--after img { filter: saturate(1.08) contrast(1.03) brightness(1.03); }
+.compare__side--after img { filter: saturate(1.05) contrast(1.02); }
 .compare__label {
   position: absolute;
   bottom: 1.1rem;
