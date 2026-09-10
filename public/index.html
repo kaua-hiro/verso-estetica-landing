@@ -26,17 +26,22 @@
 
 <header class="nav" id="nav">
   <a class="nav__mark" href="#top">Verso<span>.</span></a>
-  <nav class="nav__links">
+  <nav class="nav__links" id="navLinks">
     <a href="#tratamentos">Tratamentos</a>
     <a href="#camadas">Camadas</a>
     <a href="#resultados">Resultados</a>
     <a href="#diferenciais">Diferenciais</a>
+    <a class="nav__links-cta" href="#agendar">Agendar avaliação</a>
   </nav>
   <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro" aria-pressed="false">
     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
   </button>
   <a class="nav__cta" href="#agendar">Agendar avaliação</a>
+  <button class="nav__burger" id="navBurger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+    <svg class="icon-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
 </header>
 
 <main id="top">
@@ -97,49 +102,74 @@
 
     <ul class="menu" data-reveal-group>
       <li class="menu__row" data-reveal style="--i:0">
-        <span class="menu__dur">50 min</span>
-        <div class="menu__name">
-          <h3>Limpeza de pele profunda</h3>
-          <span class="menu__leader" aria-hidden="true"></span>
-          <span class="menu__price">R$ 180</span>
+        <div class="menu__media">
+          <img src="https://images.unsplash.com/photo-1761718209708-9ab9ba1c7252?auto=format&fit=crop&w=900&q=80" alt="Esteticista aplicando espuma de limpeza no rosto de uma cliente" loading="lazy" width="900" height="675">
+          <span class="menu__stamp"><span class="menu__stamp-num">50</span><span class="menu__stamp-unit">min</span></span>
         </div>
-        <p>Extração manual, alta frequência e máscara calmante sob medida pro seu tipo de pele.</p>
+        <div class="menu__body">
+          <div class="menu__name">
+            <h3>Limpeza de pele profunda</h3>
+            <span class="menu__leader" aria-hidden="true"></span>
+            <span class="menu__price">R$ 180</span>
+          </div>
+          <p>Extração manual, alta frequência e máscara calmante sob medida pro seu tipo de pele.</p>
+        </div>
       </li>
       <li class="menu__row" data-reveal style="--i:1">
-        <span class="menu__dur">40 min</span>
-        <div class="menu__name">
-          <h3>Peeling de diamante</h3>
-          <span class="menu__leader" aria-hidden="true"></span>
-          <span class="menu__price">R$ 220</span>
+        <div class="menu__media">
+          <img src="https://images.unsplash.com/photo-1670201203208-055d6d79db4a?auto=format&fit=crop&w=900&q=80" alt="Aplicação de sérum esfoliante sobre a pele do rosto" loading="lazy" width="900" height="675">
+          <span class="menu__stamp"><span class="menu__stamp-num">40</span><span class="menu__stamp-unit">min</span></span>
         </div>
-        <p>Microesfoliação mecânica pra textura, poro dilatado e marcas superficiais de acne.</p>
+        <div class="menu__body">
+          <div class="menu__name">
+            <h3>Peeling de diamante</h3>
+            <span class="menu__leader" aria-hidden="true"></span>
+            <span class="menu__price">R$ 220</span>
+          </div>
+          <p>Microesfoliação mecânica pra textura, poro dilatado e marcas superficiais de acne.</p>
+        </div>
       </li>
       <li class="menu__row" data-reveal style="--i:2">
-        <span class="menu__dur">45 min</span>
-        <div class="menu__name">
-          <h3>Radiofrequência facial</h3>
-          <span class="menu__leader" aria-hidden="true"></span>
-          <span class="menu__price">R$ 260</span>
+        <div class="menu__media">
+          <img src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=900&q=80" alt="Cliente recebendo massagem facial durante protocolo de radiofrequência" loading="lazy" width="900" height="675">
+          <span class="menu__stamp"><span class="menu__stamp-num">45</span><span class="menu__stamp-unit">min</span></span>
         </div>
-        <p>Estímulo de colágeno pra firmeza — protocolo de 6 sessões com fotos de progresso.</p>
+        <div class="menu__body">
+          <div class="menu__name">
+            <h3>Radiofrequência facial</h3>
+            <span class="menu__leader" aria-hidden="true"></span>
+            <span class="menu__price">R$ 260</span>
+          </div>
+          <p>Estímulo de colágeno pra firmeza — protocolo de 6 sessões com fotos de progresso.</p>
+        </div>
       </li>
       <li class="menu__row" data-reveal style="--i:3">
-        <span class="menu__dur">60 min</span>
-        <div class="menu__name">
-          <h3>Drenagem linfática corporal</h3>
-          <span class="menu__leader" aria-hidden="true"></span>
-          <span class="menu__price">R$ 190</span>
+        <div class="menu__media">
+          <img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=900&q=80" alt="Massagem manual nas costas durante sessão de drenagem linfática" loading="lazy" width="900" height="675">
+          <span class="menu__stamp"><span class="menu__stamp-num">60</span><span class="menu__stamp-unit">min</span></span>
         </div>
-        <p>Manual, ritmada, com foco em retenção e pós-operatório liberado pelo cirurgião.</p>
+        <div class="menu__body">
+          <div class="menu__name">
+            <h3>Drenagem linfática corporal</h3>
+            <span class="menu__leader" aria-hidden="true"></span>
+            <span class="menu__price">R$ 190</span>
+          </div>
+          <p>Manual, ritmada, com foco em retenção e pós-operatório liberado pelo cirurgião.</p>
+        </div>
       </li>
       <li class="menu__row" data-reveal style="--i:4">
-        <span class="menu__dur">30 min</span>
-        <div class="menu__name">
-          <h3>Design de sobrancelhas com henna</h3>
-          <span class="menu__leader" aria-hidden="true"></span>
-          <span class="menu__price">R$ 90</span>
+        <div class="menu__media">
+          <img src="https://images.unsplash.com/photo-1783013951101-2d9ed3eac234?auto=format&fit=crop&w=900&q=80" alt="Design de sobrancelhas sendo feito com ferramenta de modelagem" loading="lazy" width="900" height="675">
+          <span class="menu__stamp"><span class="menu__stamp-num">30</span><span class="menu__stamp-unit">min</span></span>
         </div>
-        <p>Mapeamento pela estrutura óssea do rosto antes de qualquer pinça encostar.</p>
+        <div class="menu__body">
+          <div class="menu__name">
+            <h3>Design de sobrancelhas com henna</h3>
+            <span class="menu__leader" aria-hidden="true"></span>
+            <span class="menu__price">R$ 90</span>
+          </div>
+          <p>Mapeamento pela estrutura óssea do rosto antes de qualquer pinça encostar.</p>
+        </div>
       </li>
     </ul>
   </section>

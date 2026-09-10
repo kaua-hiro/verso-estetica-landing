@@ -13,6 +13,27 @@
     });
   }
 
+  /* Mobile nav */
+  var nav = document.getElementById("nav");
+  var burger = document.getElementById("navBurger");
+  var navLinks = document.getElementById("navLinks");
+  if (nav && burger && navLinks) {
+    function closeMenu() {
+      nav.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+    }
+    burger.addEventListener("click", function () {
+      var open = nav.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", String(open));
+    });
+    navLinks.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", closeMenu);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeMenu();
+    });
+  }
+
   /* Reveal on scroll */
   var revealEls = document.querySelectorAll("[data-reveal]");
   if ("IntersectionObserver" in window && revealEls.length) {
